@@ -59,7 +59,7 @@ make
 
 ./solver NX NY T_END
 
-example: ./solver 300 300 2.0
+example: ./solver 300 100 4.0
 
 ### CPU version
 
