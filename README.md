@@ -4,7 +4,9 @@
 
 This project uses the two-dimensional supersonic forward-facing step problem as a reference test case. This problem is commonly associated with the strong-shock benchmark discussed by Woodward and Colella:
 
-Woodward, P. and Colella, P. (1984). *The numerical simulation of two-dimensional fluid flow with strong shocks*. Journal of Computational Physics, 54(1), 115–173. DOI: 10.1016/0021-9991(84)90142-6.
+Woodward, P. and Colella, P., The numerical simulation of two-dimensional fluid
+flow with strong shocks, Journal of Computational Physics, 54[1], pp. 115-173, 1984,
+ISSN 0021-9991,
 
 Our implementation does not reproduce the exact numerical scheme from the paper. Instead, we use the same type of strong-shock forward-facing step flow as a benchmark problem and implement it using a Particle Flux Method with CPU and CUDA GPU versions.
 
