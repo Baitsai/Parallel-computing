@@ -45,62 +45,34 @@ Each cell emits Nf particles. In the CUDA version, the main particle kernel flat
 ### GPU version
 
 Compile:
-
-make clean
 make
-
-Run:
-
 ./solver NX NY T_END
 
-Example:
+Example:./solver 300 300 2.0
 
-./solver 300 300 2.0
-###CPU version
+### CPU version
 
 Compile manually:
-
 gcc -O3 solver.c -lm -o solver_cpu
-
-Run:
-
 ./solver_cpu NX NY T_END
 
-Example:
+### Output Format
 
-./solver_cpu 300 300 2.0
-Output Format
-
-The output file results.txt contains one row per physical cell:
-
-x y rho u v p solid
-
+The output file results.txt contains one row per physical cell: x y rho u v p solid
 The plotting script reads these columns, masks the solid cells, and saves the density contour as density.png.
 
 ## Visualization
 
-Generate the density contour:
-
-python plot_contours.py
+Generate the density contour: python plot_contours.py
 
 The output figure is:
-
 <img width="2400" height="800" alt="density" src="https://github.com/user-attachments/assets/bbe13791-190f-4aba-94e6-d023d7f5ebaa" />
 
 ## Speedup Measurement
 
-Run the same case using CPU and GPU, then compute:
-
-Speedup = CPU time / GPU time
-
-Use at least three grid sizes or total cell counts.
-
-The x-axis of the graph should be:
+Run the same case using CPU and GPU, then compute: Speedup = CPU time / GPU time
 
 Total cells = NX * NY
-
-The y-axis should be:
-
 Speedup = CPU time / GPU time
 
 <img width="514" height="319" alt="image" src="https://github.com/user-attachments/assets/5a7ed1c4-f1d3-474c-87c8-52f857ccde5e" />
