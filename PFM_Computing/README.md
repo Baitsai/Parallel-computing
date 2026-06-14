@@ -1,4 +1,4 @@
-# Parallel-computing
+# PFM-Project
 
 ## Reference Problem
 
