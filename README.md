@@ -45,15 +45,17 @@ Each cell emits Nf particles. In the CUDA version, the main particle kernel flat
 ### GPU version
 
 Compile:
+
 make
 
 ./solver NX NY T_END
 
-Example:./solver 300 300 2.0
+example: ./solver 300 300 2.0
 
 ### CPU version
 
 Compile manually:
+
 gcc -O3 solver.c -lm -o solver_cpu
 
 ./solver_cpu NX NY T_END
