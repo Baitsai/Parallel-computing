@@ -1,14 +1,14 @@
-# PFM-Project
+# PFM CPU/GPU Project Documentation
 
-## Reference Problem
+## Project Overview
 
-This project uses the two-dimensional supersonic forward-facing step problem as a reference test case. This problem is commonly associated with the strong-shock benchmark discussed by Woodward and Colella:
+This project implements a Particle Flux Method (PFM) simulation for a two-dimensional supersonic forward-facing step flow. The goal is to compare the performance between a serial CPU implementation and a CUDA GPU implementation.
 
-Woodward, P. and Colella, P., The numerical simulation of two-dimensional fluid
-flow with strong shocks, Journal of Computational Physics, 54[1], pp. 115-173, 1984,
-ISSN 0021-9991,
+The reference flow problem is based on the classic two-dimensional strong-shock forward-facing step benchmark discussed in:
 
-Our implementation does not reproduce the exact numerical scheme from the paper. Instead, we use the same type of strong-shock forward-facing step flow as a benchmark problem and implement it using a Particle Flux Method with CPU and CUDA GPU versions.
+Woodward, P. and Colella, P. (1984). *The numerical simulation of two-dimensional fluid flow with strong shocks*. Journal of Computational Physics, 54(1), 115–173.
+
+Our implementation does not reproduce the exact numerical scheme of the paper. Instead, we use the same type of strong-shock forward-facing step problem as the test case and implement it using a Particle Flux Method.
 
 ## Problem Description
 
