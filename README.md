@@ -17,12 +17,19 @@ The simulation domain is a 2D channel with a solid step obstacle. The inflow is 
 Main physical settings:
 
 Flow type: supersonic flow, Mach 3
+
 Inflow velocity: (u, v) = (3.0, 0.0)
+
 Density: rho = 1.4
+
 Pressure: p = 1.0
+
 Gas constants: R_GAS = 1.0, GAMMA = 1.4
+
 Step location: SBL = 0.6
+
 Step height: SBH = 0.2
+
 Solid region: approximately x >= SBL and y <= SBH
 
 Ghost cells are used to impose boundary conditions around the computational domain.
